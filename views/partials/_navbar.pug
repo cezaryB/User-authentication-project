@@ -1,0 +1,23 @@
+nav.navigation-bar
+    ul.navigation-bar__container
+        if path == "/"
+            li.navigation-bar__container__item
+                a(class="active" href="/") Home
+            li.navigation-bar__container__item
+                a(href="/register") Register
+            li.navigation-bar__container__item 
+                a(href="/login") Login
+        else if path == "/register"
+            li.navigation-bar__container__item
+                a(href="/") Home
+            li.navigation-bar__container__item.active
+                a(class="active" href="/register") Register
+            li.navigation-bar__container__item
+               a(href="/login") Login 
+        else if path == "/login"
+            li.navigation-bar__container__item Home
+                a(href="/") Home
+            li.navigation-bar__container__item
+                a(href="/register") Register
+            li.navigation-bar__container__item
+                a(class="active" href="/login") Login 

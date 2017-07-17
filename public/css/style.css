@@ -36,7 +36,6 @@ h1, h2 {
         -webkit-justify-content: flex-end; } }
     .navigation-bar__container__item {
       margin: 20px 0;
-      font-size: 20px;
       background: #0F8BAA;
       color: #fff; }
       @media (min-width: 768px) {
@@ -66,6 +65,12 @@ h1, h2 {
             background: #fff;
             transition: all .3s ease-out;
             -webkit-transition: all .3s ease-out; } }
+      .navigation-bar__container__item a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff; }
+        .navigation-bar__container__item a.active {
+          color: #FFA80B; }
 
 .main-jumbotron {
   height: 50vh;

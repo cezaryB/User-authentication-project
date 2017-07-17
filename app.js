@@ -6,7 +6,7 @@ var app = express();
 
 //setting view engine
 
-app.set("view engine", "ejs");
+app.set("view engine", "pug");
 
 
 //setting static resources
@@ -18,7 +18,6 @@ app.use(express.static(__dirname + "/public"));
 var routes = require("./routes");
 
 app.use("/", routes);
-
 
 app.listen(3000, () => {
     console.log("App has just started on the port 3000");
