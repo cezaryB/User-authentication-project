@@ -222,3 +222,46 @@ h1, h2 {
         color: $white;
     }
 }
+
+.register-jumbotron {
+    min-height: 80vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 40px 0;
+    .register-form {
+        max-width: 600px;
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        legend {
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+            font-size: 36px;
+            text-align: center;
+        }
+        label {
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        input {
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .button-container {
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
